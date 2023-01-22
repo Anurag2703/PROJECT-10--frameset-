@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: rgb(0, 0, 0);
+            background: rgb(0, 255, 123);
+            padding-left: 25pc;
+            padding-top: 7pc;
+        }
+
+        form{
+            display: flex;
+            background: rgb(137, 244, 137);
+            padding-left: 30px;
+            padding-right: 200px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            flex-direction: column;
+            margin-left: 150px;
+            margin-top: 60px;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        form label{
+            padding: 15px;
+            margin-left: -15px;
+            margin-bottom: -10px;
+            font-size: 3.6vh;
+            font-weight: 400;
+        }
+
+        form input, form textarea{
+            border: 0;
+            margin: 40px 0;
+            padding: 35px;
+            outline: none;
+            background: #f7f9d5;
+            width: 70vh;
+            font-size: 2vh;
+            border-radius: 15px;
+        }
+
+        form button{
+            padding: 20px;
+            background: rgb(179, 247, 196);
+            color: black;
+            font-size: 25px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 200px;
+            border-radius: 30px;
+            margin: 0 auto;
+            margin-left: 70px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" placeholder="first name" required>
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" placeholder="last name" required>
+        <div class="buttons">
+            <div class="action_btn">
+                <button name="submit" class="action_btn submit" type="submit" value="Submit">Submit</button>
+                <button name="submit" class="action_btn next" type="next" value="Next">Next</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
